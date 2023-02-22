@@ -1,18 +1,49 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatIconModule } from '@angular/material/icon';
+import { MatListModule } from '@angular/material/list';
+import { MatSidenavModule } from '@angular/material/sidenav';
+import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { HeaderComponent } from './main/component/header/header.component';
+import { SidebarComponent } from './main/component/sidebar/sidebar.component';
+import { DashboardComponent } from './main/pages/dashboard/dashboard.component';
+import { MainComponent } from './main/pages/main/main.component';
+import { WavesComponent } from './main/pages/waves/waves.component';
+import { WeatherComponent } from './main/pages/weather/weather.component';
+import { WindComponent } from './main/pages/wind/wind.component';
+
+const appRoutes: Routes = [
+  { path: 'overview', component: MainComponent },
+  { path: 'wind', component: WindComponent },
+  { path: 'waves', component: WavesComponent },
+  { path: 'weather', component: WeatherComponent },
+  { path: '', redirectTo: '/dashboard', pathMatch: 'full' },
+];
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    DashboardComponent,
+    SidebarComponent,
+    HeaderComponent,
+    MainComponent,
+    WavesComponent,
+    WeatherComponent,
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    BrowserAnimationsModule,
+    MatSidenavModule,
+    MatListModule,
+    MatIconModule,
+    RouterModule.forRoot(appRoutes),
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [AppComponent],
 })
-export class AppModule { }
+export class AppModule {}

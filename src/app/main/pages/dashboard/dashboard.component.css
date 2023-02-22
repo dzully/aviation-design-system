@@ -1,0 +1,22 @@
+.sidenav-container {
+  height: 100%;
+  position: relative;
+}
+
+.sidenav {
+  width: 255px;
+}
+
+.mat-list-item-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0fr 1fr;
+}
+
+.mat-list-item-icon {
+  margin-right: 24px;
+}
+
+.active {
+  background-color: #eaf4fb;
+}

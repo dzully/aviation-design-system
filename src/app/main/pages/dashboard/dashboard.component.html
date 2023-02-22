@@ -1,0 +1,23 @@
+<mat-sidenav-container class="sidenav-container">
+  <mat-sidenav #sidenav class="sidenav" mode="side" opened="true">
+    <mat-nav-list>
+      <mat-list-item
+        *ngFor="let item of listSidebar"
+        routerLink="{{ item.link }}"
+        routerLinkActive="active"
+        disabled="{{ item.disable }}"
+        [ngClass]="{ active: isActive(item.link) }"
+      >
+        <div class="mat-list-item-content">
+          <mat-icon class="mat-list-item-icon" matListIcon>{{
+            item.icon
+          }}</mat-icon>
+          <span class="mat-list-item-text" matLine>{{ item.name }}</span>
+        </div>
+      </mat-list-item>
+    </mat-nav-list>
+  </mat-sidenav>
+  <mat-sidenav-content>
+    <router-outlet></router-outlet>
+  </mat-sidenav-content>
+</mat-sidenav-container>
