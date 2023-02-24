@@ -1,4 +1,17 @@
 /* You can add global styles to this file, and also import other style files */
 
-html, body { height: 100%; }
-body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
+html,
+body {
+  height: 100%;
+}
+body {
+  margin: 0;
+  font-family: "Orsted Sans", sans-serif;
+}
+@font-face {
+  font-family: "Orsted Sans";
+  src: url("./assets/fonts/orsted-sans-webfont.woff2") format("woff2"),
+    url("./assets/fonts/orsted-sans-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}

@@ -1,1 +1,53 @@
-<p>sidebar works!</p>
+<div class="sidenav-content">
+  <div class="header-logo">
+    <img src="assets/horizontal.png" alt="logo" />
+  </div>
+  <mat-nav-list class="main-list">
+    <mat-list-item
+      *ngFor="let item of listSidebar"
+      routerLink="{{ item.link }}"
+      routerLinkActive="active"
+      disabled="{{ item.disable }}"
+      [ngClass]="{ active: isActive(item.link) }"
+      [ngStyle]="{
+        'border-left':
+          selectedPath === item.link ? '4px solid #4099da' : '4px solid white'
+      }"
+    >
+      <div class="mat-list-item-wrapper">
+        <div class="mat-list-item-content">
+          <mat-icon
+            class="mat-list-item-icon"
+            matListIcon
+            [ngStyle]="{
+              color: selectedPath === item.link ? '#4099da' : '#231815'
+            }"
+            >{{ item.icon }}</mat-icon
+          >
+          <span
+            class="mat-list-item-text"
+            matLine
+            [ngStyle]="{
+              color: selectedPath === item.link ? '#4099da' : '#3B4956'
+            }"
+            >{{ item.name }}</span
+          >
+        </div>
+      </div>
+    </mat-list-item>
+  </mat-nav-list>
+  <footer class="footer">
+    <div class="footer-card">
+      <div class="footer-header-icon">
+        <mat-icon>lightbulb_outline</mat-icon>
+      </div>
+      <div class="footer-description">
+        <span class="footer-title">Get Started</span>
+        <span class="footer-subtitle">
+          Nunc, sit semper non amet pulvinar. Lacus, egestas ac vulputate
+          placerat.
+        </span>
+      </div>
+    </div>
+  </footer>
+</div>

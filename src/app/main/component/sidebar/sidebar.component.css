@@ -1,0 +1,101 @@
+.mat-list-item-content {
+  display: grid;
+  align-items: center;
+  grid-template-columns: 0fr 1fr;
+  width: 100%;
+}
+
+.mat-list-item-icon {
+  margin-right: 24px;
+}
+
+.active {
+  background-color: #eaf4fb;
+}
+
+.header-logo {
+  padding: 32px 0px 58px 16px;
+}
+
+.mat-list-item-wrapper {
+  display: flex;
+  flex-direction: row;
+}
+
+.main-list {
+  height: 60%;
+}
+
+.sidenav-content {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  overflow: hidden;
+}
+
+.footer {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 216px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.footer-card {
+  width: 207px;
+  height: 131px;
+  background: #eaf4fb;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.footer-header-icon {
+  width: 45px;
+  height: 45px;
+  background-color: white;
+  border: 5px solid #eaf4fb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50px;
+  position: relative;
+  bottom: 25px;
+}
+
+.footer-description {
+  bottom: 15px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  padding: 0px 16px 0px 16px;
+}
+
+.footer-title {
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 21px;
+  color: #3b4956;
+  margin-bottom: 4px;
+}
+
+.footer-subtitle {
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  text-align: center;
+  color: #3b4956;
+}
