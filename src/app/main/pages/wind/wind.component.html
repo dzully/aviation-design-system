@@ -1,1 +1,12 @@
-<p>wind works!</p>
+<div class="container">
+  <div class="content">
+    <app-graph class="app-graph" [chart]="chart" [chart2]="chart2"></app-graph>
+    <hr />
+    <app-card-detail
+      [listOfCard]="cards"
+      class="card-content"
+    ></app-card-detail>
+    <hr />
+    <app-graph class="app-graph"></app-graph>
+  </div>
+</div>

@@ -1,0 +1,23 @@
+.container {
+  background: #ffffff;
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  display: flex;
+  flex-direction: row;
+  width: 100%;
+}
+
+.app-graph {
+  padding: 16px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 16px 8px;
+}

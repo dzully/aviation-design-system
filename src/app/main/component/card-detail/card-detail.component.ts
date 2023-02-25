@@ -1,5 +1,5 @@
 import { Component, Input } from '@angular/core';
-import { cardProps } from '../../pages/main/main.component';
+import { cardProps } from '../../pages/wind/wind.component';
 
 @Component({
   selector: 'app-card-detail',

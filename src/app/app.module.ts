@@ -12,6 +12,8 @@ import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { CardDetailComponent } from './main/component/card-detail/card-detail.component';
+import { GraphComponent } from './main/component/graph/graph.component';
 import { HeaderComponent } from './main/component/header/header.component';
 import { SidebarComponent } from './main/component/sidebar/sidebar.component';
 import { DashboardComponent } from './main/pages/dashboard/dashboard.component';
@@ -19,8 +21,6 @@ import { MainComponent } from './main/pages/main/main.component';
 import { WavesComponent } from './main/pages/waves/waves.component';
 import { WeatherComponent } from './main/pages/weather/weather.component';
 import { WindComponent } from './main/pages/wind/wind.component';
-import { GraphComponent } from './main/component/graph/graph.component';
-import { CardDetailComponent } from './main/component/card-detail/card-detail.component';
 
 const appRoutes: Routes = [
   { path: 'overview', component: MainComponent },
@@ -39,6 +39,7 @@ const appRoutes: Routes = [
     MainComponent,
     WavesComponent,
     WeatherComponent,
+    WindComponent,
     GraphComponent,
     CardDetailComponent,
   ],

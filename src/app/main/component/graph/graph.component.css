@@ -8,3 +8,13 @@
 .chart-container {
   height: 100%;
 }
+
+.title {
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  color: #3b4956;
+  padding-bottom: 16px;
+}
