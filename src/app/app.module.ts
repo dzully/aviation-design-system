@@ -1,8 +1,12 @@
 import { NgModule } from '@angular/core';
 import { BrowserModule } from '@angular/platform-browser';
 
+import { MatBadgeModule } from '@angular/material/badge';
+import { MatOptionModule } from '@angular/material/core';
+import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { MatListModule } from '@angular/material/list';
+import { MatSelectModule } from '@angular/material/select';
 import { MatSidenavModule } from '@angular/material/sidenav';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { RouterModule, Routes } from '@angular/router';
@@ -41,6 +45,10 @@ const appRoutes: Routes = [
     MatSidenavModule,
     MatListModule,
     MatIconModule,
+    MatFormFieldModule,
+    MatSelectModule,
+    MatBadgeModule,
+    MatOptionModule,
     RouterModule.forRoot(appRoutes),
   ],
   providers: [],

@@ -7,6 +7,10 @@
 
 .mat-list-item-icon {
   margin-right: 24px;
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .active {
@@ -44,6 +48,8 @@
   padding: 10px;
   display: flex;
   justify-content: center;
+  flex-direction: column;
+  align-items: center;
 }
 
 .footer-card {
@@ -55,6 +61,7 @@
   justify-content: center;
   flex-direction: column;
   align-items: center;
+  margin-bottom: 32px;
 }
 
 .footer-header-icon {
@@ -98,4 +105,47 @@
   line-height: 18px;
   text-align: center;
   color: #3b4956;
+}
+
+.footer-user {
+  display: flex;
+  align-items: center;
+  width: 90%;
+}
+
+.footer-user-short-icon {
+  border-radius: 50px;
+  border: 1px solid #e5e8eb;
+  padding: 12px;
+  margin-right: 8px;
+}
+
+.footer-user-short-name {
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  display: flex;
+  align-items: center;
+  color: #3b4956;
+}
+
+.footer-user-short-action {
+  float: right;
+  align-items: flex-end;
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+}
+
+.footer-user-short-action-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: none;
+  background-color: transparent;
+}
+
+.mat-list-item-text {
+  font-size: 14px;
 }

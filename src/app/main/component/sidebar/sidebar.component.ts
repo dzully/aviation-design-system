@@ -22,7 +22,7 @@ export class SidebarComponent {
       id: 'wind',
       name: 'Wind',
       link: 'wind',
-      icon: 'dashboard',
+      icon: 'air',
       disable: false,
     },
     {
@@ -36,21 +36,21 @@ export class SidebarComponent {
       id: 'weather',
       name: 'Weather',
       link: 'weather',
-      icon: 'dashboard',
+      icon: 'filter_drama',
       disable: false,
     },
     {
       id: 'cctv',
       name: 'CCTV (Coming later)',
       link: 'cctv',
-      icon: 'dashboard',
+      icon: 'videocam',
       disable: true,
     },
     {
       id: 'lightning',
       name: 'Lightning (Coming later)',
       link: 'lightning',
-      icon: 'dashboard',
+      icon: 'flash_on',
       disable: true,
     },
   ];
@@ -58,6 +58,8 @@ export class SidebarComponent {
   showFiller = false;
   listSidebar = this.listOfSidebar;
   selectedPath = '';
+  username = 'Dajak';
+  shortUsername = 'DJ';
 
   isActive(path: string) {
     return this.router.url.includes(path);

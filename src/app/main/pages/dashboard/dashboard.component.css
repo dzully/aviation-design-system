@@ -11,3 +11,7 @@
   bottom: 0;
   overflow: hidden;
 }
+
+.content {
+  padding: 12px 24px 0px 24px;
+}

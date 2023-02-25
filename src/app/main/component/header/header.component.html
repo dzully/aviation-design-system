@@ -1,1 +1,50 @@
-<p>header works!</p>
+<div>
+  <div class="header-title">Select Substation</div>
+  <div class="wrapper">
+    <div class="wrapper-dropdown">
+      <mat-form-field appearance="outline">
+        <mat-select [(value)]="selectedSubstation">
+          <mat-option
+            *ngFor="let substation of substationList"
+            [value]="substation"
+          >
+            {{ substation.name }}
+          </mat-option>
+        </mat-select>
+      </mat-form-field>
+    </div>
+    <div class="wrapper-user-info">
+      <div class="wrapper-user-info-content">
+        <div class="wrapper-user-info-date">
+          <mat-icon class="icon">access_time</mat-icon>
+        </div>
+        <span class="wrapper-user-info-date-text">
+          Park: 6-Apr-2021 15:45:23 UTC
+        </span>
+        <hr class="divider" />
+        <span class="wrapper-user-info-date-text">
+          System: 6-Apr-2021 15:45:23 UTC
+        </span>
+      </div>
+
+      <div class="container">
+        <div class="custom-status">
+          <mat-icon class="icon-user">storage</mat-icon>
+          <div class="user-status"></div>
+        </div>
+        <div class="custom-status">
+          <mat-icon-button
+            matBadge="2"
+            matBadgeColor="warn"
+            matBadgePosition="above after"
+          >
+            <mat-icon>notifications</mat-icon>
+          </mat-icon-button>
+        </div>
+        <div class="custom-status">
+          <mat-icon>open_in_new</mat-icon>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
