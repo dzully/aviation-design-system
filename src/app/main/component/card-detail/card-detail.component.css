@@ -57,4 +57,6 @@
 .card-body {
   height: 100%;
   background-color: #f5f6f7;
+  display: grid;
+  place-items: center;
 }

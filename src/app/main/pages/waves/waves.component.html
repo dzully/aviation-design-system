@@ -1,1 +1,13 @@
-<p>waves works!</p>
+<div class="container">
+  <div class="content">
+    <app-card-detail
+      [listOfCard]="cards"
+      class="card-content"
+    ></app-card-detail>
+    <app-graph-waves
+      [withTitle]="false"
+      class="app-graph"
+      [chart]="chart"
+    ></app-graph-waves>
+  </div>
+</div>

@@ -1,0 +1,21 @@
+.container {
+  background: #ffffff;
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.content {
+  padding: 16px;
+  height: 100%;
+}
+
+.app-graph {
+  width: 100%;
+}
+
+.card-content {
+  padding: 16px 8px;
+}

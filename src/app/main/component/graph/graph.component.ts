@@ -8,6 +8,7 @@ import { Component, Input } from '@angular/core';
 export class GraphComponent {
   constructor() {}
 
+  @Input() withTitle: boolean = true;
   @Input() chart: any;
   @Input() chart2: any;
 }
