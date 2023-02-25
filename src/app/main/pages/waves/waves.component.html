@@ -1,9 +1,17 @@
 <div class="container">
   <div class="content">
-    <app-card-detail
-      [listOfCard]="cards"
-      class="card-content"
-    ></app-card-detail>
+    <div class="title">Waves</div>
+    <div class="card-wrapper">
+      <app-card-detail
+        [cardHeight]="cardHeight"
+        [listOfCard]="cards"
+        class="card-content"
+      ></app-card-detail>
+      <app-card-detail-box
+        [listOfCard]="cardBox"
+        style="width: 100%"
+      ></app-card-detail-box>
+    </div>
     <app-graph-waves
       [withTitle]="false"
       class="app-graph"

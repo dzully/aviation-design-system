@@ -1,0 +1,61 @@
+.container {
+  display: grid;
+  width: 100%;
+  grid-template-rows: 1fr; /* Set container to full height */
+  grid-template-columns: repeat(2, 1fr); /* Set number of columns */
+  grid-gap: 10px; /* Add gap between items */
+}
+
+.card {
+  width: 100%;
+  text-align: center;
+}
+
+.card-content {
+  background: #e5e8eb;
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-header {
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+
+  /* Text / Text */
+
+  color: #3b4956;
+  height: 34px;
+  width: 100%;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  border-bottom: 1px solid #b3bbc2;
+}
+
+.card-body {
+  height: 36px;
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  color: #3b4956;
+  background: #f5f6f7;
+  width: 100%;
+  text-align: center;
+  justify-content: center;
+}

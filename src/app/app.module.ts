@@ -22,6 +22,7 @@ import { WavesComponent } from './main/pages/waves/waves.component';
 import { WeatherComponent } from './main/pages/weather/weather.component';
 import { WindComponent } from './main/pages/wind/wind.component';
 import { GraphWavesComponent } from './main/pages/waves/graph-waves/graph-waves.component';
+import { CardDetailBoxComponent } from './main/component/card-detail-box/card-detail-box.component';
 
 const appRoutes: Routes = [
   { path: 'overview', component: MainComponent },
@@ -44,6 +45,7 @@ const appRoutes: Routes = [
     GraphComponent,
     CardDetailComponent,
     GraphWavesComponent,
+    CardDetailBoxComponent,
   ],
   imports: [
     BrowserModule,

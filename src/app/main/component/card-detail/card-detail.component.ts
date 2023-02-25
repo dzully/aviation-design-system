@@ -10,4 +10,5 @@ export class CardDetailComponent {
   constructor() {}
 
   @Input() listOfCard: cardProps[] | undefined;
+  @Input() cardHeight: number | string | undefined = 119.67;
 }

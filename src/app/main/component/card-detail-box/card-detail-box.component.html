@@ -1,11 +1,11 @@
 <div class="container">
-  <div class="card" [style.height]="cardHeight" *ngFor="let card of listOfCard">
+  <div class="card" *ngFor="let card of listOfCard">
     <div class="card-content">
       <div class="card-header">
-        <h3>{{ card.title }}</h3>
+        {{ card.title }}
       </div>
       <div class="card-body">
-        <p>{{ card.content }}</p>
+        {{ card.content }}
       </div>
     </div>
   </div>

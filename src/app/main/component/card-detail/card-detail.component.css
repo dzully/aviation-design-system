@@ -2,13 +2,12 @@
   /* create gap between cards */
   display: grid;
   grid-template-rows: 1fr; /* Set container to full height */
-  grid-template-rows: repeat(3, 1fr); /* Set number of columns */
   grid-gap: 10px; /* Add gap between items */
+  height: 100%;
 }
 
 .card {
   width: 166px;
-  height: 119.67px;
 
   /* Cloud / Cloud 25% */
 

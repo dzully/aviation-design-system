@@ -10,18 +10,30 @@ import { cardProps } from '../wind/wind.component';
 export class WavesComponent {
   constructor() {}
 
+  cardHeight: string = '100%';
   cards: cardProps[] = [
     {
-      title: 'Direction (10 min. avg.)',
-      content: '320°',
+      title: 'Significant wave height',
+      content: '0.95 m',
+    },
+  ];
+
+  cardBox: cardProps[] = [
+    {
+      title: 'Tide',
+      content: '0.00 m',
     },
     {
-      title: 'Speed (10 min. avg.)',
-      content: '12 kts',
+      title: 'Mean wave period',
+      content: '5.40 s',
     },
     {
-      title: 'Gust',
-      content: '---',
+      title: 'Air gap',
+      content: '21.43 m',
+    },
+    {
+      title: 'Max. wave height',
+      content: '1.56 m',
     },
   ];
 
@@ -42,7 +54,7 @@ export class WavesComponent {
         },
         min: 0,
         max: 12,
-        labels: ['0', '2', '4', '6', '8', '10', '12'],
+        labels: ['0', '0.2', '0.4', '0.6', '0.8', '1', '1.2', '1.4'],
       },
     },
     elements: {
@@ -81,8 +93,8 @@ export class WavesComponent {
         labels: this.labels,
         datasets: [
           {
-            label: 'Sales',
-            data: [6, 10, 6, 8, 5, 7, 5, 6, 8, 6],
+            label: 'Hs (m)',
+            data: [0.6, 0.8, 1.2, 0.2, 0.5, 0.1],
             backgroundColor: '#377C76',
             fill: false,
             borderColor: '#377C76',
@@ -101,7 +113,7 @@ export class WavesComponent {
             // @ts-ignore
             title: {
               display: true,
-              text: 'Speed m/s',
+              text: 'Hs (m)',
             },
           },
         },
