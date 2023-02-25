@@ -1,0 +1,17 @@
+.container {
+  height: 407px;
+  background: #ffffff;
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+  display: flex;
+  width: 100%;
+}
+
+.app-graph {
+  padding: 16px;
+  width: 100%;
+}
+
+.card-content {
+  padding: 16px 8px;
+}

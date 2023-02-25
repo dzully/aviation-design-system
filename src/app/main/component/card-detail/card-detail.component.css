@@ -1,0 +1,60 @@
+.container {
+  /* create gap between cards */
+  display: grid;
+  grid-template-rows: 1fr; /* Set container to full height */
+  grid-template-rows: repeat(3, 1fr); /* Set number of columns */
+  grid-gap: 10px; /* Add gap between items */
+}
+
+.card {
+  width: 166px;
+  height: 119.67px;
+
+  /* Cloud / Cloud 25% */
+
+  background: #e5e8eb;
+  /* Cloud / Cloud 75% */
+
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  align-self: stretch;
+  flex-grow: 1;
+}
+
+.card-content {
+  display: flex;
+  justify-content: center;
+  height: 100%;
+  flex-direction: column;
+}
+
+.card-header {
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 18px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  background-color: #e4e8ea;
+  border-bottom: 1px solid #b3bbc2;
+
+  /* Text / Text */
+
+  color: #3b4956;
+}
+
+.card-body {
+  height: 100%;
+  background-color: #f5f6f7;
+}
