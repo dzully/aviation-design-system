@@ -10,4 +10,5 @@ export class CardDetailBoxComponent {
   constructor() {}
 
   @Input() listOfCard: cardProps[] | undefined;
+  @Input() itemPerBox = 2;
 }

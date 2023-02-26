@@ -1,1 +1,14 @@
-<p>weather works!</p>
+<div class="container">
+  <div class="title">Weather</div>
+  <div class="content">
+    <app-card-detail-box
+      [listOfCard]="listOfCard"
+      [itemPerBox]="itemPerBox"
+    ></app-card-detail-box>
+    <app-card-detail-box
+      [listOfCard]="listOfCardSecond"
+      [itemPerBox]="itemPerBox"
+    ></app-card-detail-box>
+    <app-card-box></app-card-box>
+  </div>
+</div>

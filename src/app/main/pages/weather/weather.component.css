@@ -1,0 +1,31 @@
+.container {
+  background: #ffffff;
+  /* Cloud / Cloud 75% */
+
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+  padding: 16px;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.title {
+  padding-bottom: 16px;
+  font-family: "Orsted Sans";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+
+  /* Text / Text */
+
+  color: #3b4956;
+}

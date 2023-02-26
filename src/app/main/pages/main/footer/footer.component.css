@@ -1,0 +1,51 @@
+.container {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.footer {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 4px 16px;
+  gap: 16px;
+
+  width: 100%;
+
+  /* Ørsted/White */
+
+  background: #ffffff;
+  /* Cloud / Cloud 75% */
+
+  border: 1px solid #b3bbc2;
+  border-radius: 4px;
+}
+
+.footer-text {
+  font-family: "Roboto Mono";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 24px;
+  /* identical to box height, or 150% */
+
+  display: flex;
+  align-items: center;
+
+  /* Cloud / Cloud */
+
+  color: #99a4ae;
+
+  /* Inside auto layout */
+
+  flex: none;
+  order: 0;
+  flex-grow: 1;
+}
+
+.content {
+  padding-top: 24px;
+  display: flex;
+  justify-content: center;
+}

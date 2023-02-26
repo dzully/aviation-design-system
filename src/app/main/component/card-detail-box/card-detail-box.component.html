@@ -1,4 +1,7 @@
-<div class="container">
+<div
+  class="container"
+  [style.gridTemplateColumns]="'repeat(' + itemPerBox + ', 1fr)'"
+>
   <div class="card" *ngFor="let card of listOfCard">
     <div class="card-content">
       <div class="card-header">
