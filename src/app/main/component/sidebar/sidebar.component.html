@@ -36,8 +36,11 @@
       </div>
     </mat-list-item>
   </mat-nav-list>
-  <footer class="footer">
-    <div class="footer-card">
+  <footer
+    class="footer"
+    [ngStyle]="{ height: !openStatus ? '100px' : '216px' }"
+  >
+    <div class="footer-card" *ngIf="openStatus">
       <div class="footer-header-icon">
         <mat-icon>lightbulb_outline</mat-icon>
       </div>
@@ -49,12 +52,33 @@
         </span>
       </div>
     </div>
-    <div class="footer-user">
-      <div class="footer-user-short-icon">{{ shortUsername }}</div>
-      <div class="footer-user-short-name">{{ username }}</div>
-      <div class="footer-user-short-action">
-        <button mat-button class="footer-user-short-action-button">
-          <mat-icon matListIcon>chevron_left</mat-icon>
+    <div
+      class="footer-user"
+      [ngStyle]="{ flexDirection: !openStatus ? 'column' : 'row' }"
+    >
+      <div
+        class="footer-user-short-icon"
+        [ngStyle]="{
+          'margin-right': openStatus ? '8px' : '0px'
+        }"
+      >
+        {{ shortUsername }}
+      </div>
+      <div class="footer-user-short-name" *ngIf="openStatus">
+        {{ username }}
+      </div>
+      <div
+        class="footer-user-short-action"
+        [ngStyle]="{ top: openStatus ? '0' : '10px' }"
+      >
+        <button
+          mat-button
+          class="footer-user-short-action-button"
+          (click)="onClick()"
+        >
+          <mat-icon matListIcon>{{
+            !openStatus ? "chevron_right" : "chevron_left"
+          }}</mat-icon>
         </button>
       </div>
     </div>

@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { ActivatedRoute, NavigationEnd, Router } from '@angular/router';
 import { filter } from 'rxjs';
 
@@ -85,5 +85,12 @@ export class SidebarComponent {
           activeItem.classList.add('active');
         }
       });
+  }
+
+  @Output() clicked = new EventEmitter<void>();
+  @Input() openStatus = true;
+
+  onClick() {
+    this.clicked.emit();
   }
 }

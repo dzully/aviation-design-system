@@ -136,9 +136,11 @@
   display: flex;
   justify-content: flex-end;
   width: 100%;
+  position: relative;
 }
 
 .footer-user-short-action-button {
+  cursor: pointer;
   display: flex;
   justify-content: center;
   align-items: center;
