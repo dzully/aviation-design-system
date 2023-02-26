@@ -52,9 +52,7 @@ export class WavesComponent {
           dash: [2, 5],
           dashOffset: 0,
         },
-        min: 0,
-        max: 12,
-        labels: ['0', '0.2', '0.4', '0.6', '0.8', '1', '1.2', '1.4'],
+        labels: ['1', '2', '3', '4', '5', '6', '7', '8', '9', '10', '11'],
       },
     },
     elements: {
@@ -95,9 +93,9 @@ export class WavesComponent {
           {
             label: 'Hs (m)',
             data: [0.6, 0.8, 1.2, 0.2, 0.5, 0.1],
-            backgroundColor: '#377C76',
+            backgroundColor: '#4099DA',
             fill: false,
-            borderColor: '#377C76',
+            borderColor: '#4099DA',
             borderDash: [2, 5],
             tension: 0.1,
           },

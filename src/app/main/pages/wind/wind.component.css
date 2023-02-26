@@ -15,9 +15,15 @@
 
 .app-graph {
   padding: 16px;
-  width: 100%;
+  width: 80%;
 }
 
 .card-content {
   padding: 16px 8px;
+}
+
+.compass {
+  display: grid;
+  place-items: center;
+  width: 100%;
 }
